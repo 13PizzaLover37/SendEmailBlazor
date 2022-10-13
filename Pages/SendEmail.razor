@@ -1,0 +1,19 @@
+﻿@page "/sendemail"
+<h3>SendEmail</h3>
+
+<p>Getter</p>
+<p><input @bind="to_person" @bind:event="oninput" /></p>
+
+<p>Subject</p>
+<p><input @bind="subject" @bind:event="oninput" /></p>
+
+<p>Body</p>
+<p><input @bind="body" @bind:event="oninput"/></p>
+
+<button class="btn btn-info" @onclick="sendMessage">Send</button>
+
+
+<p>@to_person</p>
+<p>@subject</p>
+<p>@body</p>
+
